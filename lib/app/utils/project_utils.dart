@@ -16,34 +16,34 @@ class ProjectUtils {
 List<ProjectUtils> projectUtils = [
   ProjectUtils(
     banners: 'assets/imgs/02.png',
-    icons: 'assets/imgs/flutter.png',
-    titles: 'Awesome Social Media App',
+    icons: 'assets/imgs/SerpentID.png',
+    titles: 'SerphantsID App',
     description:
-        'This is a just Fully functional Social media App by using flutter, source code is also available, check below.',
-    links: 'https://github.com/sudeshnb/poetically-.git',
+        '🐍 Introducing SerphantsID, a revolutionary snake exploration app powered by a cutting-edge Image Classification AI model, meticulously crafted using the Flutter framework and Dart language! 📱',
+    links: 'https://github.com/ChanukaHasaranga/serphantsid-re-build',
   ),
   ProjectUtils(
     banners: 'assets/imgs/1.png',
-    icons: 'assets/imgs/flutter.png',
-    titles: 'Awesome CRM UI',
+    icons: 'assets/imgs/spotify.png',
+    titles: 'Spotify-like App',
     description:
-        'This is a just CRM UI Design using Figma, file is also available, check below.',
-    links: 'https://github.com/sudeshnb/',
+        '🎵 Exciting News! Just launched my latest project - a personalized music streaming app built using Flutter and Dart! 🚀🔊',
+    links: 'https://github.com/ChanukaHasaranga/sportify',
   ),
   ProjectUtils(
     banners: 'assets/imgs/03.png',
-    icons: 'assets/imgs/flutter.png',
-    titles: 'Exercise App',
+    icons: 'assets/imgs/habio.png',
+    titles: 'Habio App',
     description:
-        'This is a just Fully function Exercise App by using flutter, source code is also available, check below.',
-    links: 'https://github.com/sudeshnb/elderly_exercise_app.git',
+        '🚀 Excited to introduce my latest creation: Habio, a revolutionary daily routing reminder app meticulously crafted using the powerful Flutter framework and Dart language! 📱',
+    links: 'https://github.com/ChanukaHasaranga/habio',
   ),
   ProjectUtils(
     banners: 'assets/imgs/04.png',
-    icons: 'assets/imgs/flutter.png',
-    titles: 'Awesome Plant App UI',
+    icons: 'assets/imgs/mealapp.png',
+    titles: 'MealApp',
     description:
-        'This is a just Plant App UI by using flutter, source code is also available, check below.',
-    links: 'https://github.com/sudeshnb/flutter_plant_app.git',
+        '🍽️ Delighted to unveil my latest creation: a vibrant MealApp crafted with Flutter and Dart! 📱✨ Designed as a comprehensive food ordering application.',
+    links: 'https://github.com/ChanukaHasaranga/mealshop',
   ),
 ];
