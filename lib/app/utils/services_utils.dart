@@ -16,14 +16,14 @@ List<ServicesUtils> servicesUtils = [
     name: 'Android App Development',
     icon: 'assets/icons/android.svg',
     description:
-        "Are you interested in the great Mobile app? Let's make it a reality.",
+        "Are you interested in the great Android Mobile app? Let's make it a reality.",
     tool: ['Flutter', 'Dart Language', 'Android (Java)'],
   ),
   ServicesUtils(
     name: 'iOS App Development',
     icon: 'assets/icons/apple.svg',
     description:
-        "Are you interested in the great Mobile app? Let's make it a reality.",
+        "Are you interested in the great IOS Mobile app? Let's make it a reality.",
     tool: ['Flutter'],
   ),
   ServicesUtils(

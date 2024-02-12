@@ -40,7 +40,7 @@ class HomeMobile extends StatelessWidget {
             style: TextStyle(
               fontSize: isFontSize(context, 28),
               fontWeight: FontWeight.w600,
-            ),
+            ), 
           ),
           Space.y(1.w)!,
           Row(

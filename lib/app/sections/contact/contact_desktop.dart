@@ -7,6 +7,7 @@ import 'package:mysite/core/color/colors.dart';
 import 'package:mysite/core/configs/configs.dart';
 import 'package:mysite/core/util/constants.dart';
 import 'package:sizer/sizer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ContactDesktop extends StatelessWidget {
   const ContactDesktop({Key? key}) : super(key: key);
@@ -25,7 +26,7 @@ class ContactDesktop extends StatelessWidget {
           Space.y(1.w)!,
           const CustomSectionSubHeading(
             text:
-                "If you want to avail my services you can contact me at the links below.",
+                "You may reach me using the links below if you're interested in hiring me for a job.",
           ),
           Space.y(2.w)!,
           Container(
@@ -67,7 +68,7 @@ class ContactDesktop extends StatelessWidget {
                       ],
                     ),
                     InkWell(
-                      onTap: () => openURL(whatsapp),
+                      onTap: () =>_launchGmail(gmail),
                       child: Container(
                         padding: const EdgeInsets.symmetric(
                             vertical: 5, horizontal: 20),
@@ -77,7 +78,7 @@ class ContactDesktop extends StatelessWidget {
                             //     width: 2.0, color: theme.primaryColor),
                             borderRadius: BorderRadius.circular(10)),
                         child: const Text(
-                          'Get Started',
+                          'Contact Me',
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w500,
@@ -113,5 +114,21 @@ class ContactDesktop extends StatelessWidget {
         ],
       ),
     );
+  }
+  Future<void> _launchGmail(String recipient) async {
+    final Uri emailLaunchUri = Uri(
+      scheme: 'mailto',
+      path: 'chanukahasaranga@gmail.com',
+      queryParameters: {
+        'subject': 'Subject of the email',
+        'body': 'Body of the email',
+      },
+    );
+
+    if (await canLaunch(emailLaunchUri.toString())) {
+      await launch(emailLaunchUri.toString());
+    } else {
+      throw 'Could not launch Gmail';
+    }
   }
 }

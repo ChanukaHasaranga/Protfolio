@@ -7,6 +7,7 @@ import 'package:mysite/core/color/colors.dart';
 import 'package:mysite/core/configs/configs.dart';
 import 'package:mysite/core/util/constants.dart';
 import 'package:sizer/sizer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ContactMobileTab extends StatelessWidget {
   const ContactMobileTab({Key? key}) : super(key: key);
@@ -25,7 +26,7 @@ class ContactMobileTab extends StatelessWidget {
         ),
         Space.y(5.w)!,
         InkWell(
-          onTap: () => openURL(whatsapp),
+          onTap: () =>_launchGmail(gmail),
           child: Container(
             padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 20),
             decoration: BoxDecoration(
@@ -61,5 +62,21 @@ class ContactMobileTab extends StatelessWidget {
         Container(color: Colors.white.withOpacity(0.2), height: 1),
       ],
     );
+  }
+  Future<void> _launchGmail(String recipient) async {
+    final Uri emailLaunchUri = Uri(
+      scheme: 'mailto',
+      path: 'chanukahasaranga@gmail.com',
+      queryParameters: {
+        'subject': 'Subject of the email',
+        'body': 'Body of the email',
+      },
+    );
+
+    if (await canLaunch(emailLaunchUri.toString())) {
+      await launch(emailLaunchUri.toString());
+    } else {
+      throw 'Could not launch Gmail';
+    }
   }
 }

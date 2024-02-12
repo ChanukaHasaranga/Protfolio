@@ -29,7 +29,7 @@ Color darkTextColor = const Color(0xFFF3F2FF);
 const pinkpurple = LinearGradient(
   begin: Alignment.centerLeft,
   end: Alignment.centerRight,
-  colors: [Color(0XFFaa367c), Color(0XFF4a2fbd)],
+  colors: [Color.fromARGB(255, 5, 13, 56), Color.fromARGB(255, 47, 130, 189)],
 );
 
 const grayBack = LinearGradient(
