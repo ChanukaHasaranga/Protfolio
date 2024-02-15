@@ -21,10 +21,7 @@ List<ContactUtils> contactUtils = [
   ContactUtils(
       url: linkedin,
       icon: "https://img.icons8.com/ios-filled/50/000000/linkedin.png"),
-       ContactUtils(
-      url: gmail,
-      icon: "https://img.icons8.com/ios-filled/50/000000/gmail.png"),
-  
+      
 ];
 
 // 

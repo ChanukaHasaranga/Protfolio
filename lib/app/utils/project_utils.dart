@@ -15,7 +15,7 @@ class ProjectUtils {
 
 List<ProjectUtils> projectUtils = [
   ProjectUtils(
-    banners: 'assets/imgs/02.png',
+    banners: 'assets/imgs/serphantsid.jpg',
     icons: 'assets/imgs/SerpentID.png',
     titles: 'SerphantsID App',
     description:
